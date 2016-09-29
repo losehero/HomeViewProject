@@ -9,33 +9,32 @@
 #import "HomeViewController.h"
 
 @interface HomeViewController ()
-@property (nonatomic,strong) UILabel *contentLabel;
+@property(nonatomic,strong) UITableView *tableView;
 @end
 
 @implementation HomeViewController
 
--(UILabel *)contentLabel
+- (UITableView *)tableView
 {
-    if (!_contentLabel)
+    if (!_tableView)
     {
-        _contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        _contentLabel.backgroundColor = [UIColor redColor];
-        _contentLabel.text = self.labelContentStr;
-        _contentLabel.center = self.view.center;
+        _tableView = [[UITableView alloc]  init];
     }
-
-    return _contentLabel;
+    
+    return _tableView;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    [self.view addSubview:self.contentLabel];
     
-    self.view.backgroundColor = [UIColor yellowColor];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

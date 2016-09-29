@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,9 +21,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.hidden = NO;
     
-    
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
-    self.window.rootViewController = homeViewController;
+    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+    self.window.rootViewController = na;
     
     return YES;
 }
