@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		32518B861D9D0D1100A8A94D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32518B851D9D0D1100A8A94D /* HomeViewController.m */; };
+		32518B8A1D9D23B700A8A94D /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32518B891D9D23B700A8A94D /* HomeCell.m */; };
+		32518B8D1D9D310300A8A94D /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32518B8C1D9D310300A8A94D /* HomeModel.m */; };
+		32518B901D9D317900A8A94D /* HomeViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32518B8F1D9D317900A8A94D /* HomeViewControllerModel.m */; };
+		32518B941D9D367200A8A94D /* HomeDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32518B931D9D367200A8A94D /* HomeDataRequest.m */; };
 		328A72341D9A60170051B7C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 328A72331D9A60170051B7C5 /* main.m */; };
 		328A72371D9A60170051B7C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 328A72361D9A60170051B7C5 /* AppDelegate.m */; };
 		328A723F1D9A60170051B7C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328A723E1D9A60170051B7C5 /* Assets.xcassets */; };
@@ -17,6 +21,15 @@
 /* Begin PBXFileReference section */
 		32518B841D9D0D1100A8A94D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		32518B851D9D0D1100A8A94D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		32518B881D9D23B700A8A94D /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		32518B891D9D23B700A8A94D /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		32518B8B1D9D310300A8A94D /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		32518B8C1D9D310300A8A94D /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		32518B8E1D9D317900A8A94D /* HomeViewControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewControllerModel.h; sourceTree = "<group>"; };
+		32518B8F1D9D317900A8A94D /* HomeViewControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewControllerModel.m; sourceTree = "<group>"; };
+		32518B911D9D31AB00A8A94D /* HomeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeProtocol.h; sourceTree = "<group>"; };
+		32518B921D9D367200A8A94D /* HomeDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDataRequest.h; sourceTree = "<group>"; };
+		32518B931D9D367200A8A94D /* HomeDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDataRequest.m; sourceTree = "<group>"; };
 		328A722F1D9A60170051B7C5 /* HomeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328A72331D9A60170051B7C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		328A72351D9A60170051B7C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +56,10 @@
 		32518B801D9D0D1100A8A94D /* HomeModels */ = {
 			isa = PBXGroup;
 			children = (
+				32518B8E1D9D317900A8A94D /* HomeViewControllerModel.h */,
+				32518B8F1D9D317900A8A94D /* HomeViewControllerModel.m */,
+				32518B8B1D9D310300A8A94D /* HomeModel.h */,
+				32518B8C1D9D310300A8A94D /* HomeModel.m */,
 			);
 			path = HomeModels;
 			sourceTree = "<group>";
@@ -50,6 +67,7 @@
 		32518B811D9D0D1100A8A94D /* HomeProtocols */ = {
 			isa = PBXGroup;
 			children = (
+				32518B911D9D31AB00A8A94D /* HomeProtocol.h */,
 			);
 			path = HomeProtocols;
 			sourceTree = "<group>";
@@ -57,6 +75,8 @@
 		32518B821D9D0D1100A8A94D /* HomeRequest */ = {
 			isa = PBXGroup;
 			children = (
+				32518B921D9D367200A8A94D /* HomeDataRequest.h */,
+				32518B931D9D367200A8A94D /* HomeDataRequest.m */,
 			);
 			path = HomeRequest;
 			sourceTree = "<group>";
@@ -73,6 +93,8 @@
 		32518B871D9D10E400A8A94D /* HomeCells */ = {
 			isa = PBXGroup;
 			children = (
+				32518B881D9D23B700A8A94D /* HomeCell.h */,
+				32518B891D9D23B700A8A94D /* HomeCell.m */,
 			);
 			path = HomeCells;
 			sourceTree = "<group>";
@@ -258,8 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32518B8D1D9D310300A8A94D /* HomeModel.m in Sources */,
+				32518B941D9D367200A8A94D /* HomeDataRequest.m in Sources */,
 				328A72371D9A60170051B7C5 /* AppDelegate.m in Sources */,
 				328A72341D9A60170051B7C5 /* main.m in Sources */,
+				32518B901D9D317900A8A94D /* HomeViewControllerModel.m in Sources */,
+				32518B8A1D9D23B700A8A94D /* HomeCell.m in Sources */,
 				32518B861D9D0D1100A8A94D /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

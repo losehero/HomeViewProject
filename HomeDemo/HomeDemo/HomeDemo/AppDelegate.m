@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
-
+#import "HomeProtocol.h"
+#import <JSObjection.h>
+#import <YTKNetwork.h>
 @interface AppDelegate ()
 
 @end
@@ -21,7 +23,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.hidden = NO;
     
-    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+    config.baseUrl = @"http://s.budejie.com";
+    
+    
+    
+    UIViewController<HomeViewControllerProtocol>  *homeViewController = [[JSObjection defaultInjector]
+                                                                         getObject:@protocol(HomeViewControllerProtocol)];
+    
     UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     self.window.rootViewController = na;
     
