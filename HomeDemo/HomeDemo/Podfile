@@ -1,0 +1,11 @@
+platform :ios, ‘8.0’
+source ‘https://github.com/CocoaPods/Specs.git’
+
+ target 'HomeDemo' do
+	pod	'YTKNetwork', '~> 2.0.1’
+	pod	'SDWebImage', '~>3.8'
+	pod	'UMengAnalytics'
+	pod 'Objection', '1.6.1'
+ end
+
+
