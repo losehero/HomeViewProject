@@ -7,8 +7,7 @@
 //
 
 #import "HomeCell.h"
-#import <Masonry.h>
-
+#import <Masonry/Masonry.h>
 @interface HomeCell()
 
 @end

@@ -5,12 +5,12 @@
 //  Created by jinlong9 on 16/9/27.
 //  Copyright © 2016年 losehero. All rights reserved.
 //
-
-#import "HomeViewController.h"
-#import "HomeCell.h"
-#import <Masonry.h>
-#import "HomeModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "HomeViewController.h"
+#import <Masonry/Masonry.h>
+#import "HomeModel.h"
+#import "HomeCell.h"
+
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) UITableView *tableView;
 @property(nonatomic,strong) HomeModel *homeModel;

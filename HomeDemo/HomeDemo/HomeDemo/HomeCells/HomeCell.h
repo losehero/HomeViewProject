@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface HomeCell : UITableViewCell
 @property (nonatomic) UIImageView *videoImageView;
 @end
