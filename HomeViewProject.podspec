@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HomeViewProject"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "HomeView  for ios"
 
   # This description is used to generate tags and improve search results.
@@ -132,7 +132,9 @@ Pod::Spec.new do |s|
 
     s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
-
+  #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.dependency 'Masonry'
+  s.dependency 'Objection', '1.6.1'
+  s.dependency 'SDWebImage', '~>3.8'
+  s.dependency 'YTKNetwork', '~> 2.0.1'
 end
