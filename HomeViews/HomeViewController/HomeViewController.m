@@ -35,6 +35,7 @@
         _tableView = [[UITableView alloc] init];
         _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.delegate = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.dataSource = self;
     }
     
